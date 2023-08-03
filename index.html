@@ -14,8 +14,8 @@
       This should be the same across all pages.
      -->
     <link rel="icon" href="./assets/images/1311.png" />
-		<title>Unemployables Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+		<title>Alexander Lee's Portfolio</title>
+    <meta name="description" content="My gamedev.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
@@ -28,51 +28,31 @@
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Portfolio Title</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:whitevans.eth@gmail.com">
+        <!-- Title -->
+        <span class="nav-title">Alexander Lee</span>
+         <!-- email address for contact -->
+        <a class="button" href="mailto:alexanderbevislee@gmail.com">
           <span class="button-text">Contact Me</span>
         </a>
       </a>
     </div>
+    
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
+      <img src="./assets/images/title-image.jpg" class="project-image">
 
       <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
-        <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
-
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
-          <img src="./assets/images/1311.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
-            <span class="image-caption">Unemployables #1311</span>
-          </a>
-        </div>
-
-          <!-- 
-            TODO
-
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
+      <div id="portfolio-header"></div>
         <div id="portfolio-header-text-container">
             <div class="header-text">
-              <span class="main-title">Hey, I'm @ndoherty_eth.</span>
-              <div class="body-text">I’m a freelance designer and developer who aims to help other creatives build out their portfolios, skillset, and businesses.</div>
+              <span class="main-title">Hey, I'm Alex.</span>
+              <div class="body-text">I’m a Software Engineer who specializes in games.</div>
             </div>
             <a class="button" id="my-work-link">
               <span class="button-text">Check out my projects</span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-        </div>
       </div>
 
       <!-- ABOUT SECTION -->
@@ -85,15 +65,25 @@
       <div id="about-section">
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
-        </div>
+          <div class="body-text">
+            As an intermediate game developer with many years of experience, I am passionate about creating immersive and engaging gaming experiences for players. 
+            With a strong background in C# and Unity, I have honed my skills in game development and am capable of designing and implementing game mechanics, 
+            improving game stability, and optimizing parts of a game! 
+          </div>
+          <div class="body-text">
+            Throughout my career, I have worked on various types of games, primarily focused on mobile development, and have contributed to all aspects of the development process, including game design, programming, testing, and optimization. 
+            I thrive in fast-paced, collaborative environments and enjoy working with a team to bring a vision to life. In addition to my technical expertise, I have excellent communication and problem-solving skills,
+            which enable me to work effectively with team members, and external partners. I am always seeking to learn and improve my skills, and I am excited to take on new challenges in game development.
+          </div>
+          <div class="body-text">
+            If you're looking for a dedicated and experienced game developer to join your team, please don't hesitate to reach out. Let's create some amazing games together!</div>
+          </div>
       </div>
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
-        <span class="subheader-text">My Work / My Projects</span>
+        <span class="subheader-text">My Work Projects</span>
 
         <div class="projects-container">
           <!-- 
@@ -119,38 +109,96 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/desktop.jpeg" class="project-image">
+            <img src="./assets/images/payday-icon.jpg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">PAYDAY: Crime War</div>
+              <div class="body-text project-card-text">A multiplayer first-person shooter made for mobile devices, based with Unity.</div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
+          <div class="project-card">
+            <img src="./assets/images/cannafarm.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Cannafarm</div>
+              <div class="body-text project-card-text">A base-building game similar to FarmVille, made for mobile using Unity.</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <!-- SIDE-PROJECTS -->
+       <div id="my-work-section">
+        <span class="subheader-text">Side-Projects</span>
+
+        <div class="projects-container">
+
+          <div class="project-card">
+            <img src="./assets/images/CrawlingDungeons/1.PNG.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Crawling Dungeons</div>
+              <div class="body-text project-card-text">A basic turn-based RPG inspired from games like Final Fantasy. Released on the Play Store.</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/Card-Jitsu/pic.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Card-Jitsu</div>
+              <div class="body-text project-card-text">A recreation of the card game known as Card-Jitsu, originating from the old game of Club Penguin.</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/Chess/gameplay.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Chess</div>
+              <div class="body-text project-card-text">A recreation of the classic game of Chess.</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
           <div class="project-card">
             <img src="./assets/images/code.jpeg" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Project Name</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">SFML - 2D Platformer</div>
+              <div class="body-text project-card-text">A short Mario-like platformer game.</div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
+
           <div class="project-card">
-            <img src="./assets/images/sketchbook.jpeg" class="project-image">
+            <img src="./assets/images/SmashGuys/fight.PNG.png" class="project-image">
             <div class="project-card-text-container">
-              <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
-              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+              <div class="subheader-text project-title">Smash Guys</div>
+              <div class="body-text project-card-text">A game inspired by Super Smash Bros.</div>
             </div>
             <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
+
         </div>
       </div>
     </div>
