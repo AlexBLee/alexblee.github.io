@@ -141,6 +141,10 @@ body {
   gap: 34px;
 }
 
+ul.bullet-list li {
+  margin-bottom: 20px; 
+}
+
     /* Project Gallery */
 
     #project-gallery {
