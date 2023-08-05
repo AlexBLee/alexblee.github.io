@@ -4,17 +4,33 @@ if (document.getElementById('my-work-link')) {
   })
 }
 
-function showModal(caption, imageSrc) {
-  var modal = document.getElementById("modal");
-  var modalImage = document.getElementById("modalImage");
-  var modalCaption = document.getElementById("modalCaption");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-  modalImage.src = imageSrc;
-  modalCaption.textContent = caption;
-  modal.style.display = "block";
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function closeModal() {
-  var modal = document.getElementById("modal");
-  modal.style.display = "none";
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
