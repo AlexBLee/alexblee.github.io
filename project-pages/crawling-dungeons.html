@@ -110,37 +110,46 @@
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
         <div class="subheader-text">Image Gallery</div>
         <div class="project-gallery-content">
-
-            <div class="gallery">
-              <div class="image-container">
-                <img src="../assets/images/CrawlingDungeons/1.PNG.png" alt="Image 1" onclick="showModal('', '../assets/images/CrawlingDungeons/1.PNG.png')">
-                <div class="caption">The player can fight this monster here by choosing what they want to do with the buttons at the bottom.</div>
-              </div>
-              <div class="image-container">
-                <img src="../assets/images/CrawlingDungeons/2.PNG.png" alt="Image 2" onclick="showModal('', '../assets/images/CrawlingDungeons/2.PNG.png')">
-                <div class="caption">Between levels, the player can shop for items to upgrade their character.</div>
-              </div>
-              <div class="image-container">
-                <img src="../assets/images/CrawlingDungeons/3.PNG.png" alt="Image 3" onclick="showModal('', '../assets/images/CrawlingDungeons/3.PNG.png')">
-                <div class="caption">The tools made to easily create an enemy or a level.</div>
-              </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/CrawlingDungeons/1.PNG.png" class="gallery-image">
+              <span class="image-caption">The player can fight this monster here by choosing what they want to do with the buttons at the bottom.</span>
             </div>
-
-            <!-- Modal -->
-            <div id="modal" class="modal">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <img id="modalImage" src="" alt="Expanded Image">
-              <div id="modalCaption" class="modal-caption"></div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/CrawlingDungeons/2.PNG.png" class="gallery-image">
+              <span class="image-caption">Between levels, the player can shop for items to upgrade their character.</span>
             </div>
-
-            <script src="script.js"></script>
+            <div class="gallery-image-container">
+              <img src="../assets/images/CrawlingDungeons/3.PNG.png" class="gallery-image">
+              <span class="image-caption">The tools made to easily create an enemy or a level.</span>
+            </div>
         </div>
       </div>
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-      <a class="icon-link" href="mailto:alexanderbevislee@gmail.com">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
