@@ -47,3 +47,15 @@ align-items: center;
 .icon-row img {
 display: block;   /* Remove inline gaps */
 }
+
+.header-action {
+  margin-top: 5px;
+  padding: 5px 8px;
+  background: #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
