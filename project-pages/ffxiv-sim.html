@@ -1,0 +1,156 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2RT0DK7MZ"></script>
+    <script src="../js/analytics.js"></script>
+    
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>FFXIV Sim</title>
+    <meta name="description" content="Project overview of FFXIV Sim.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Alexander Lee</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:alexanderbevislee@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">FFXIV Simulator</div>
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Key Highlights</div>
+        <div class="project-details-content">
+          <div class="body-text">       
+            This is a simulator for the MMORPG game FFXIV. I created this in hopes of being able to make my own way to practice certain mechanics in boss fights
+            for the game.
+            <ul class="bullet-list">
+            <li>Built with Unity in C#</li>
+            <li>Includes a raid editor which allows you to re-create or make your own mechanics.</li>
+            <li>Created with saving/loading in mind using JSON.
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Project Links</div>
+        <div class="project-details-content">
+            <ul class="bullet-list">
+            <li>Repo: <a href="https://github.com/AlexBLee/another-ffxiv-sim">https://github.com/AlexBLee/another-ffxiv-sim</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+          <div class="project-gallery-content">
+            <!-- Container for the image gallery -->
+          <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+                <img src="../assets/images/ffxiv-sim/simulator.gif" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+                <img src="../assets/images/ffxiv-sim/EditorScreen.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+                <img src="../assets/images/ffxiv-sim/editor-with-gizmo.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="../assets/images/ffxiv-sim/sim-thumbnail.png" style="width:100%" onclick="currentSlide(1)" alt="The player can fight this monster here by choosing what they want to do with the buttons at the bottom.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../assets/images/ffxiv-sim/EditorScreen.png" style="width:100%" onclick="currentSlide(2)" alt="Between levels, the player can shop for items to upgrade their character.">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../assets/images/ffxiv-sim/editor-with-gizmo.png" style="width:100%" onclick="currentSlide(3)" alt="The tools made to easily create an enemy or a level.">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a class="icon-link" href="mailto:alexanderbevislee@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
