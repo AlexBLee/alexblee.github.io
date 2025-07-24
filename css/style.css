@@ -37,3 +37,13 @@
     padding: 16px;
     border-radius: 12px;
 }
+
+.icon-row {
+display: flex;
+gap: 16px;
+align-items: center;
+}
+
+.icon-row img {
+display: block;   /* Remove inline gaps */
+}
