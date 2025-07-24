@@ -92,6 +92,19 @@ body {
 }
 
     /* Project Cards */
+    
+    .work-card {
+      max-width: calc((100% - 32px) / 3);
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .work-card-text-container {
+      flex-direction: column;
+      display: flex;
+      gap: 16px
+    }
 
     .project-card {
       max-width: calc((100% - 32px) / 3);
@@ -207,6 +220,10 @@ ul.bullet-list li {
     flex-direction: column;
   }
 
+  .work-card {
+    max-width: calc((100% - 16px) / 2);
+  }
+
   .project-card {
     max-width: calc((100% - 16px) / 2);
   }
@@ -216,6 +233,10 @@ ul.bullet-list li {
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
+  }
+
+  .work-card {
+    max-width: 100%;
   }
 
   .project-card {

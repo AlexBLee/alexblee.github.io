@@ -22,6 +22,12 @@ body {
   font-weight: 700;
 }
 
+.project-header-text {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .subheader-text {
   font-size: 20px;
   font-weight: 700;

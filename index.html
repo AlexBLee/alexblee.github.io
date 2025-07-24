@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 		<script defer src="./js/script.js"></script>
 	</head>
@@ -54,6 +55,7 @@
         - Change the subheader-text to whatever header you want
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
+
       <div id="about-section">
         <span class="subheader-text">My Background / About Me</span>
         <div class="about-section-content">
@@ -74,65 +76,75 @@
           </div>
       </div>
 
-      <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
-        <span class="subheader-text">Work Projects</span>
-
-        <div class="projects-container">
-           <div class="project-card">
-            <img src="./assets/images/ParallelTCG/title.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Parallel TCG</div>
-              <div class="body-text project-card-text">TCG game based in the Parallel universe, made in Unity.</div>
+      <section class = "border">
+        
+        <!-- PROJECTS / MY WORK SECTION -->
+        <div id="my-work-section">
+          <span class="project-header-text">Work Experience</span>
+          
+          <div class="projects-container">
+            <div class="work-card">
+              <img src="./assets/images/ParallelTCG/title.png" class="project-image">
+              <div class="work-card-text-container">
+                <div class="subheader-text project-title">Parallel TCG</div>
+                <div class="body-text work-card-text">TCG game based in the Parallel universe, made in Unity.</div>
+              </div>
+              <a class="button" href="./project-pages/paralleltcg.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/paralleltcg.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/WarOfNova/title.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">War Of Nova</div>
-              <div class="body-text project-card-text">A 4X Sci-Fi themed competitive strategy game made for mobile and PC.</div>
+            <div class="work-card">
+              <img src="./assets/images/WarOfNova/title.png" class="project-image">
+              <div class="work-card-text-container">
+                <div class="subheader-text project-title">War Of Nova</div>
+                <div class="body-text work-card-text">A 4X Sci-Fi themed competitive strategy game made for mobile and PC.</div>
+              </div>
+              <a class="button" href="./project-pages/warofnova.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/warofnova.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/Payday/payday-icon.jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">PAYDAY: Crime War</div>
-              <div class="body-text project-card-text">A multiplayer first-person shooter made for mobile devices, based with Unity.</div>
+            <div class="work-card">
+              <img src="./assets/images/Payday/payday-icon.jpg" class="project-image">
+              <div class="work-card-text-container">
+                <div class="subheader-text project-title">PAYDAY: Crime War</div>
+                <div class="body-text work-card-text">A multiplayer first-person shooter made for mobile devices, based with Unity.</div>
+              </div>
+              <a class="button" href="./project-pages/payday.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/payday.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
-          <div class="project-card">
-            <img src="./assets/images/Cannafarm/cannafarm.png" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Cannafarm</div>
-              <div class="body-text project-card-text">A base-building game similar to FarmVille, made for mobile using Unity.</div>
+            <div class="work-card">
+              <img src="./assets/images/Cannafarm/cannafarm.png" class="project-image">
+              <div class="work-card-text-container">
+                <div class="subheader-text project-title">Cannafarm</div>
+                <div class="body-text work-card-text">A base-building game similar to FarmVille, made for mobile using Unity.</div>
+              </div>
+              <a class="button" href="./project-pages/cannafarm.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/cannafarm.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
           </div>
-        </div>
+        </section>
       </div>
 
+        <section class = "border">
        <!-- SIDE-PROJECTS -->
        <div id="my-work-section">
-        <span class="subheader-text">Side-Projects</span>
+        <span class="project-header-text">Side-Projects</span>
+        <!-- Filter buttons -->
+        <div class="filters">
+          <button class="tag-button" data-filter=".C#">C#</button>
+          <button class="tag-button" data-filter=".C++">C++</button>
+          <button class="tag-button" data-filter=".Unity">Unity</button>
+          <button class="tag-button" data-filter=".Unreal">Unreal</button>
+        </div>
 
         <div class="projects-container">
-
-          <div class="project-card">
+          <div class="project-card C++ Unreal">
             <img src="./assets/images/Tankapalooza/Main.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Tankapalooza</div>
@@ -144,7 +156,7 @@
             </a>
           </div>
 
-          <div class="project-card">
+          <div class="project-card C# Unity">
             <img src="./assets/images/CrawlingDungeons/1.PNG.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Crawling Dungeons</div>
@@ -156,7 +168,7 @@
             </a>
           </div>
 
-          <div class="project-card">
+          <div class="project-card C# Unity">
             <img src="./assets/images/Card-Jitsu/pic.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Card-Jitsu</div>
@@ -168,7 +180,7 @@
             </a>
           </div>
 
-          <div class="project-card">
+          <div class="project-card C# Unity">
             <img src="./assets/images/Chess/gameplay.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Chess</div>
@@ -180,7 +192,7 @@
             </a>
           </div>
 
-          <div class="project-card">
+          <div class="project-card C++"">
             <img src="./assets/images/sfml.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">SFML - 2D Platformer</div>
@@ -192,7 +204,7 @@
             </a>
           </div>
 
-          <div class="project-card">
+          <div class="project-card C# Unity">
             <img src="./assets/images/SmashGuys/fight.PNG.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Smash Guys</div>
@@ -203,10 +215,13 @@
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
-
         </div>
+
+        <script src="./js/buttons.js"></script>
+
       </div>
     </div>
+    </section>
 
     <!-- FOOTER -->
     <div id="footer">

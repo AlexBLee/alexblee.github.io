@@ -1,0 +1,39 @@
+
+.tag-button {
+    height: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 231 235 / var(--tw-bg-opacity, 1));
+    padding: .5rem .75rem;
+    text-align: center;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.tag-button.active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(66 128 199 / var(--tw-bg-opacity, 1));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.tag-button.active {
+    transform: scale(1.05);
+    transition: transform .3s ease;
+}
+
+.filters
+{
+    margin: 0 auto;
+}
+
+.border
+{
+    outline: solid black 3px; 
+    padding: 16px;
+    border-radius: 12px;
+}
