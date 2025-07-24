@@ -38,7 +38,7 @@
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header"></div>
         <div id="portfolio-header-text-container">
-            <div class="header-text">
+            <div class="header-title-text">
               <span class="main-title">Hey, I'm Alex.</span>
               <div class="body-text">I’m a Software Engineer who specializes in games.</div>
             </div>
@@ -86,57 +86,114 @@
           </div>
       </div>
 
+		<script defer src="./js/drawer.js"></script>
+
       <section class = "border">
         
         <!-- PROJECTS / MY WORK SECTION -->
         <div id="my-work-section">
           <span class="project-header-text">Work Experience</span>
           
+          <div class="drawer">
+            <div class="drawer-header">
+              <div class="header-left">
+                <img src="assets/images//ParallelTCG/title.png" alt="Icon" class="header-image" />
+                <div class="header-text">
+                  <div class="header-title">Parallel</div>
+                  <div class="header-subtext">Software Engineer</div>
+                  <div class="header-subtext">Oct 2024 - June 2025</div>
+                </div>
+              </div>
+              <div class="header-icon">▶</div>
+            </div>
+            <div class="drawer-content">
+              <ul class="bullet-list">
+              <li>Engineered scalable systems to meet the technical constraints of both mobile and PC platforms.</li>
+              <li>Developed settings menus to support player customization and accessibility across multiple platforms.</li>
+              <li>Delivered concise, well-tested fixes to bugs, maintaining code clarity and long-term maintainability.</li>
+              <li>Crafted front-end screens that showcased core gameplay elements, improving user understanding and engagement.</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="drawer">
+            <div class="drawer-header">
+              <div class="header-left">
+                <img src="assets/icons/revolving-games-icon.jpg" alt="Icon" class="header-image" />
+                <div class="header-text">
+                  <div class="header-title">Revolving Games</div>
+                  <div class="header-subtext">Front-End Unity Engineer</div>
+                  <div class="header-subtext">Oct 2023 - Oct 2024</div>
+                </div>
+              </div>
+              <div class="header-icon">▶</div>
+            </div>
+            <div class="drawer-content">
+              <p>            
+                <ul class="bullet-list">
+                  <li>Developed crucial user interface menus for both system functionality and player interaction</li>
+                  <li>Enhanced gaming experiences by incorporating additional features into the menu interfaces</li>
+                  <li>Transformed back-end data into actionable insights for players, enhancing in-game visibility and usability</li>
+                  <li>Resolved front-end issues impeding players from performing specific actions within the game</li>
+                  <li>Engineered user-friendly features for designers to seamlessly interact with the map editor</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="drawer">
+            <div class="drawer-header">
+              <div class="header-left">
+                <img src="assets/icons/popreach-icon.jpg" alt="Icon" class="header-image" />
+                <div class="header-text">
+                  <div class="header-title">Popreach Games</div>
+                  <div class="header-subtext">Intermediate Unity Engineer</div>
+                  <div class="header-subtext">Sept 2021 - Aug 2023</div>
+                  </div>
+                </div>
+              <div class="header-icon">▶</div>
+            </div>
+            <div class="drawer-content">
+              <p>            
+                <ul class="bullet-list">
+                <li>Converting the Unity animation system to use Animancer, an animation package.</li>
+                <li>Adding network functionality to certain gameplay features.</li>
+                <li>Profiled and optimized the game to increase framerates.</li>
+                <li>Added controller support using Rewired.</li>
+                <li>Implemented the UI functionality for getting the character skill trees working.</li>
+                <li>Using Playfab for players to store their save data.</li>
+                <li>Symbolicated, analyzed and diagnosed game crashes for the team to look at.</li>
+            </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="drawer">
+            <div class="drawer-header">
+              <div class="header-left">
+                <img src="assets/icons/pocketpinata-interactive.jpg" alt="Icon" class="header-image" />
+                <div class="header-text">
+                  <div class="header-title">Pocket Pinata Interactive</div>
+                  <div class="header-subtext">Software Engineer (SDE1)</div>
+                  <div class="header-subtext">Nov 2020 - July 2021</div>
+                  </div>
+                </div>
+              <div class="header-icon">▶</div>
+            </div>
+            <div class="drawer-content">
+              <p>            
+                <ul class="bullet-list">
+            <li>Refactored the loading screen back-end code to be more organized and a bit more efficient.</li>
+            <li>Converted the current buying and selling market system to use Cloud Firestore.</li>
+            <li>Used Playfab and asynchronous programming to improve the functionality for players buying/selling items.</li>
+            </ul>
+              </p>
+            </div>
+          </div>
+
+
           <div class="projects-container">
-            <div class="work-card">
-              <img src="./assets/images/ParallelTCG/title.png" class="project-image">
-              <div class="work-card-text-container">
-                <div class="subheader-text project-title">Parallel TCG</div>
-                <div class="body-text work-card-text">TCG game based in the Parallel universe, made in Unity.</div>
-              </div>
-              <a class="button" href="./project-pages/paralleltcg.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-            <div class="work-card">
-              <img src="./assets/images/WarOfNova/title.png" class="project-image">
-              <div class="work-card-text-container">
-                <div class="subheader-text project-title">War Of Nova</div>
-                <div class="body-text work-card-text">A 4X Sci-Fi themed competitive strategy game made for mobile and PC.</div>
-              </div>
-              <a class="button" href="./project-pages/warofnova.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-            <div class="work-card">
-              <img src="./assets/images/Payday/payday-icon.jpg" class="project-image">
-              <div class="work-card-text-container">
-                <div class="subheader-text project-title">PAYDAY: Crime War</div>
-                <div class="body-text work-card-text">A multiplayer first-person shooter made for mobile devices, based with Unity.</div>
-              </div>
-              <a class="button" href="./project-pages/payday.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-            <div class="work-card">
-              <img src="./assets/images/Cannafarm/cannafarm.png" class="project-image">
-              <div class="work-card-text-container">
-                <div class="subheader-text project-title">Cannafarm</div>
-                <div class="body-text work-card-text">A base-building game similar to FarmVille, made for mobile using Unity.</div>
-              </div>
-              <a class="button" href="./project-pages/cannafarm.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
+            
           </div>
         </section>
       </div>
@@ -144,17 +201,68 @@
         <section class = "border">
        <!-- SIDE-PROJECTS -->
        <div id="my-work-section">
-        <span class="project-header-text">Side-Projects</span>
+        <span class="project-header-text">Projects</span>
         <!-- Filter buttons -->
         <div class="filters">
           <button class="tag-button" data-filter=".C#">C#</button>
           <button class="tag-button" data-filter=".C++">C++</button>
           <button class="tag-button" data-filter=".Unity">Unity</button>
           <button class="tag-button" data-filter=".Unreal">Unreal</button>
+          <button class="tag-button" data-filter=".WorkProject">Work Project</button>
+          <button class="tag-button" data-filter=".SideProject">Side Project</button>
         </div>
 
         <div class="projects-container">
-          <div class="project-card C++ Unreal">
+
+          <div class="project-card C# Unity WorkProject">
+            <img src="./assets/images/ParallelTCG/title.png" class="project-image">
+            <div class="work-card-text-container">
+              <div class="subheader-text project-title">Parallel TCG</div>
+              <div class="body-text work-card-text">TCG game based in the Parallel universe, made in Unity.</div>
+            </div>
+            <a class="button" href="./project-pages/paralleltcg.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card C# Unity WorkProject">
+            <img src="./assets/images/WarOfNova/title.png" class="project-image">
+            <div class="work-card-text-container">
+              <div class="subheader-text project-title">War Of Nova</div>
+              <div class="body-text work-card-text">A 4X Sci-Fi themed competitive strategy game made for mobile and PC.</div>
+            </div>
+            <a class="button" href="./project-pages/warofnova.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card C# Unity WorkProject">
+            <img src="./assets/images/Payday/payday-icon.jpg" class="project-image">
+            <div class="work-card-text-container">
+              <div class="subheader-text project-title">PAYDAY: Crime War</div>
+              <div class="body-text work-card-text">A multiplayer first-person shooter made for mobile devices, based with Unity.</div>
+            </div>
+            <a class="button" href="./project-pages/payday.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          
+          <div class="project-card C# Unity WorkProject">
+            <img src="./assets/images/Cannafarm/cannafarm.png" class="project-image">
+            <div class="work-card-text-container">
+              <div class="subheader-text project-title">Cannafarm</div>
+              <div class="body-text work-card-text">A base-building game similar to FarmVille, made for mobile using Unity.</div>
+            </div>
+            <a class="button" href="./project-pages/cannafarm.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card C++ Unreal SideProject">
             <img src="./assets/images/Tankapalooza/Main.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Tankapalooza</div>
@@ -166,7 +274,7 @@
             </a>
           </div>
 
-          <div class="project-card C# Unity">
+          <div class="project-card C# Unity SideProject">
             <img src="./assets/images/CrawlingDungeons/1.PNG.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Crawling Dungeons</div>
@@ -178,7 +286,7 @@
             </a>
           </div>
 
-          <div class="project-card C# Unity">
+          <div class="project-card C# Unity SideProject">
             <img src="./assets/images/Card-Jitsu/pic.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Card-Jitsu</div>
@@ -190,7 +298,7 @@
             </a>
           </div>
 
-          <div class="project-card C# Unity">
+          <div class="project-card C# Unity SideProject">
             <img src="./assets/images/Chess/gameplay.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Chess</div>
@@ -202,7 +310,7 @@
             </a>
           </div>
 
-          <div class="project-card C++"">
+          <div class="project-card C++ SideProject"">
             <img src="./assets/images/sfml.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">SFML - 2D Platformer</div>
@@ -214,7 +322,7 @@
             </a>
           </div>
 
-          <div class="project-card C# Unity">
+          <div class="project-card C# Unity SideProject">
             <img src="./assets/images/SmashGuys/fight.PNG.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Smash Guys</div>
